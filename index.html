@@ -1,32 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Event Listener Exercise</title>
-        <script src = "app.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css">
-      </head>
-      <body>
-      
-      <h1>The Document Object</h1>
-      <h2>The addEventListener() Method</h2>
-      
-      <p>This example adds many events on the document.</p>
-      
-      <div class="box" id="colorBox">
-        <ul>
-          <li> Hover
-            <div>
-              <script>
-              
-              </script>
-              <input type = "text" id="txt"></input>
-            </div>
-          </li>
-        </ul>
-      </div>
-      
-      </body>
-      </html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Listener Exercise</title>
+  <script src="app.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <h1>The Document Object</h1>
+  <h2>The addEventListener() Method</h2>
+
+  <p>This example adds many events on the document.</p>
+
+  <div class = "colorBox" id = "colorBox">
+    <ul>
+      <li>
+        Test Out Controls Here <br>
+      </li>
+    </ul>
+  </div>
+  <br>
+  type 'R' <input type="text" id="colorTextRed"> 
+  <script>
+    document.getElementById("colorTextRed").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextRed").innerHTML = "'R' Pressed!"
+      document.getElementById("colorTextRed").style.backgroundColor = "red";
+    }
+    </script>
+    <br>
+  type 'G' <input type="text" id="colorTextGreen"> 
+  <script>
+    document.getElementById("colorTextGreen").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextGreen").innerHTML = "'R' Pressed!"
+      document.getElementById("colorTextGreen").style.backgroundColor = "green";
+    }
+    </script>
+  <br>
+  type 'B' <input type="text" id="colorTextBlue"> 
+  <script>
+    document.getElementById("colorTextBlue").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextBlue").innerHTML = "'R' Pressed!"
+      document.getElementById("colorTextBlue").style.backgroundColor = "blue";
+    }
+    </script>
+  <br>
+  type 'P' <input type="text" id="colorTextPurple"> 
+  <script>
+    document.getElementById("colorTextPurple").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextPurple").innerHTML = "'R' Pressed!"
+      document.getElementById("colorTextPurple").style.backgroundColor = "purple";
+    }
+    </script>
+  <br>
+  type 'O' <input type="text" id="colorTextOrange"> 
+  <script>
+    document.getElementById("colorTextOrange").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextOrange").innerHTML = "'R' Pressed!"
+      document.getElementById("colorTextOrange").style.backgroundColor = "orange";
+    }
+    </script>
+    <br>
+  type 'Y' <input type="text" id="colorTextYellow"> 
+  <script>
+    document.getElementById("colorTextYellow").addEventListener("keypress", myFunction);
+    
+    function myFunction() {
+      document.getElementById("colorTextYellow").innerHTML = "'Y' Pressed!"
+      document.getElementById("colorTextYellow").style.backgroundColor = "yellow";
+    }
+  </script>
+</body>
+</html>
