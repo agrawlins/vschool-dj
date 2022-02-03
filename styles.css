@@ -29,7 +29,7 @@ body {
     background: #ccc;
 }
 
-.hover:hover {
+.hover {
     box-sizing: border-box;
     background-color: blue;
 }
